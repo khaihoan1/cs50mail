@@ -1,0 +1,119 @@
+body {
+    background-color: #f0c17f;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+}
+.header button {
+    margin: 5px;
+}
+.header-left {
+    float: left;
+}
+.header-right {
+    float: right;
+    
+}
+.header-right a {
+    margin: 5px;
+    background-color: red;
+    color: black;
+}
+
+/*---------------- END OF HEADER -----------------*/
+
+/*-------------- BODY MAILBOX-------------- */
+textarea {
+    min-height: 200px;
+}
+.email {
+    border: 1px solid gray;
+}
+@keyframes rowDisappear {
+    0% {
+        opacity: 1;
+        top: 0px;
+    } 
+    100% {
+        top: -50px;
+        opacity: 0;
+    } 
+}
+
+.divcont {
+    position: relative;
+    min-height: auto;
+}
+.mail-container {
+    animation: rowDisappear 1.5s forwards paused;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 43px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    font-size: 0.8rem;
+}
+.mail-container:hover {
+    border: 2px solid salmon;
+}
+
+.mail-container img {
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.sender, .subject, .timestamp {
+    padding: 1px;
+    display: inline-block;
+    width: 30%;
+}
+.read {
+    background-color: #d9faf8;
+}
+.unread span {
+    font-weight: bold;
+}
+.unread {
+    background-color: white;
+}
+.accessories {
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+}
+.rowcontent {
+    width: 80%;
+    display: inline-block;
+}
+
+/* EMAIL DETAIL STYLE */
+.email {
+    background-color: skyblue;
+    border: none;
+    padding: 10px;
+}
+.email-header-right {
+    float: right;
+}
+.email-header-timestamp {
+    font-size: 0.85em;
+    font-style: italic;
+}
+.email-header img {
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    /* margin-right: 5px; */
+    font-weight: lighter;
+}
+.email-content {
+    background-color: slategray;
+    padding: 10px;
+    min-height: 200px;
+}

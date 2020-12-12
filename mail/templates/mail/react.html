@@ -1,0 +1,41 @@
+{% extends "mail/layout.html" %}
+{% load static %}
+
+{% block script %}
+    <script src="{% static 'mail/mail.js' %}"></script>
+    <script type='text/babel' src="../static/mail/mail.js">
+        console.log(document.getElementById('hihi'));
+    </script>
+    <!-- <script>
+        function aaa(){
+            return fetch(`/emails/inbox`)
+            .then(response => response.json())
+            .then(result => a = result)
+            .then(()=> a)
+        }
+        aaa().then(aa=>console.log(`asdajsdhk: ${aa}`));
+        // console.log(b);
+        var startMail = 0;
+        console.log('first');
+
+        fetch(`/emails/inbox`)
+        .then(response => response.json())
+        .then(result => startMail = result)
+        .then(()=>console.log(`inside: ${startMail}`));
+        console.log('end');
+    </script> -->
+{% endblock %}
+
+{% block body %}
+    
+    <h2 id="userHolder">{{ request.user.email }}</h2>
+    <div id="hoan"></div>
+
+    <script type='text/babel' src="../static/mail/showMail.js">
+        console.log(document.getElementById('hihi'));
+    </script>
+    <script type="text/javascript" src="../static/mail/helper.js">
+        console.log('LOAD helper');
+    </script>
+{% endblock %}
+
